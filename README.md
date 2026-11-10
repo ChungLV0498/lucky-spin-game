@@ -1,51 +1,57 @@
-# 🎰 3D Interactive Lucky Spin & Lottery System
+# Hệ Thống Vòng Quay May Mắn & Bốc Thăm 3D
 
-<div align="center">
+Ứng dụng bốc thăm trúng thưởng 3D tương tác thời gian thực trên nền tảng Web, được xây dựng phục vụ các sự kiện tổng kết, tiệc tất niên và hội nghị nội bộ.
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Canvas](https://img.shields.io/badge/HTML5_Canvas-E34F26?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green.badge?style=for-the-badge)
-
-### 🌟 [Live Demo - Chơi thử trực tiếp](https://chunglv0498.github.io/lucky-spin-game/) 🌟
-
-A high-performance, interactive 3D TagCloud/Sphere lucky draw application engineered for company year-end parties, events, and giveaways. Features real-time physics rotation, bilingual UI, confetti particle effects, and persistent winner management.
-
-</div>
+- **Trải nghiệm trực tiếp:** [https://chunglv0498.github.io/lucky-spin-game/](https://chunglv0498.github.io/lucky-spin-game/)
+- **Công nghệ nền tảng:** HTML5 Canvas, TagCanvas Engine, JavaScript (ES6+), CSS3
 
 ---
 
-## ✨ Key Features
+## 1. Giới Thiệu Dự Án
 
-- **🌐 3D Interactive Tag Sphere:** Real-time 3D rotation with zoom, pan, and acceleration controls powered by HTML5 Canvas & TagCanvas.
-- **🇻🇳 🇨🇳 Bilingual Interface:** Full Vietnamese & Chinese (Tiếng Việt & 中文) language support designed for multinational team events.
-- **🎉 Dynamic Confetti & Audio:** Integrated audio cues and celebratory confetti animations upon picking winners (`canvas-confetti`).
-- **🏆 Multi-Tier Prize Management:** Supports configurable prize categories (Giải Nhất, Giải Nhì, Giải Ba, Khuyến Khích) with customizable attendee counts per draw.
-- **💾 LocalStorage State Persistence:** Automatically saves draw results and winner records to browser storage to prevent data loss across page reloads.
-- **📊 Exportable Results:** Dedicated result review panel with winner history and reset confirmation safeguards.
+Ứng dụng mô phỏng quả cầu 3D chứa danh sách nhân sự tham gia bốc thăm. Khối cầu có khả năng xoay tự do theo không gian 3 chiều với gia tốc mượt mà, cho phép tương tác bằng chuột hoặc phím bấm. Khi dừng quay, thuật toán chọn ngẫu nhiên người trúng giải, kích hoạt hiệu ứng pháo hoa chúc mừng và tự động lưu trữ kết quả để tránh mất dữ liệu khi tải lại trang.
 
 ---
 
-## 🚀 Live Demo & Usage
+## 2. Tính Năng Kỹ Thuật
 
-1. Open the live application: **[https://chunglv0498.github.io/lucky-spin-game/](https://chunglv0498.github.io/lucky-spin-game/)**
-2. Select the prize level or number of winners to draw.
-3. Click **Bắt Đầu / 开始** to accelerate the 3D rotating tag sphere.
-4. Click **Dừng / 停止** to select winners randomly with celebratory visual effects.
-5. Review the full winner roster via **Xem kết quả / 获胜名单**.
-
----
-
-## 🛠️ Tech Stack & Architecture
-
-- **Core:** Vanilla JavaScript (ES6+), HTML5 Canvas, CSS3 Flexbox/Grid
-- **Graphics Engine:** TagCanvas (3D HTML5 Canvas tag cloud)
-- **Effects:** Canvas Confetti Particle System
-- **Storage:** Web Storage API (LocalStorage)
+- **Mô phỏng quả cầu 3D thời gian thực:** Sử dụng kỹ thuật chiếu tọa độ 3D trên thẻ Canvas của HTML5, hỗ trợ xoay tự do theo các trục và phóng to/thu nhỏ bằng chuột.
+- **Hỗ trợ song ngữ Việt - Trung:** Toàn bộ giao diện điều khiển, thông báo và nút bấm hỗ trợ song ngữ, phục vụ môi trường làm việc đa quốc gia.
+- **Quản lý danh sách giải thưởng linh hoạt:** Cho phép lựa chọn cơ cấu giải thưởng (Giải Nhất, Giải Nhì, Giải Ba, Khuyến Khích) hoặc tùy chỉnh số lượng người trúng trong mỗi lượt quay.
+- **Lưu trữ trạng thái bền vững:** Kết quả bốc thăm được lưu vào bộ nhớ cục bộ trình duyệt (LocalStorage), chống mất mát dữ liệu khi mất điện hoặc vô tình tải lại trình duyệt.
+- **Trang tra cứu danh sách trúng thưởng riêng biệt:** Cung cấp bảng tổng hợp danh sách trúng giải (`result.html`) để đối chiếu và trao thưởng minh bạch.
 
 ---
 
-## 📄 License
+## 3. Hướng Dẫn Vận Hành
 
-This project is licensed under the MIT License.
+1. Mở liên kết ứng dụng: [https://chunglv0498.github.io/lucky-spin-game/](https://chunglv0498.github.io/lucky-spin-game/)
+2. Chọn giải thưởng tương ứng ở thanh điều khiển bên dưới.
+3. Nhấn **Bắt đầu (开始)**: Quả cầu 3D sẽ tăng tốc quay ngẫu nhiên.
+4. Nhấn **Dừng (停止)**: Hệ thống chốt danh sách người may mắn trúng giải và hiển thị bảng vinh danh kèm hiệu ứng pháo giấy.
+5. Nhấn **Xem kết quả (获胜名单)** để mở bảng tổng hợp toàn bộ các đợt quay.
+6. Để xóa kết quả và bắt đầu lượt mới: Nhấp chuột phải vào nút **Làm mới (重置)** và xác nhận.
+
+---
+
+## 4. Cấu Trúc Dự Án
+
+```
+├── index.html                  # Giao diện chính và khối cầu xoay 3D
+├── result.html                 # Bảng tra cứu danh sách người trúng giải
+├── css/
+│   ├── reset.css               # Chuẩn hóa hiển thị CSS
+│   └── wall.css                # Kiểu dáng giao diện và hiệu ứng sân khấu
+├── js/
+│   ├── tagcanvas.js            # Thư viện tính toán khối cầu 3D Canvas
+│   ├── member.js               # Danh sách nhân sự và dữ liệu bốc thăm
+│   └── zepto.js                # Xử lý sự kiện DOM tối ưu dung lượng
+└── audio/                      # Tệp âm thanh quay thưởng và chúc mừng
+```
+
+---
+
+## 5. Tác Giả & Bản Quyền
+
+- **Kỹ sư phát triển:** Lê Văn Chung ([@ChungLV0498](https://github.com/ChungLV0498))
+- **Mã nguồn:** Giấy phép MIT
